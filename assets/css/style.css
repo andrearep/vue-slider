@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    text-align: center;
+    padding: 2.5rem; 
+    font-size: 3rem;   
+}
+.carosello{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+img{
+    height: 500px;
+    width: 800px;
+    margin: 30px ;
+    border-radius: 0.5rem;
+}
+i{
+    font-size: 3.5rem ;
+}
