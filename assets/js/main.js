@@ -33,11 +33,21 @@ const app = new Vue(
                     return this.indice = this.img.length - 1
                 }
             },
-
+            /* cambiare l'immagine in base al pallino selezionato */
             selected: function selected(e) {
                 return this.indice = (e.currentTarget.getAttribute('data-number'));
-            }
+            },
+
+
+        },
+        mounted: function () {
+            this.$nextTick(function () {
+                window.setInterval(() => {
+                    this.next();
+                }, 5000);
+            })
         }
     }
 )
+
 
