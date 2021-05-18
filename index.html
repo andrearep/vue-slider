@@ -22,6 +22,28 @@
             <img :src="img[indice]" alt="">
             <i @click="next" class="fas fa-caret-right"></i>
         </div>
+        <div class="points">
+            <!-- circle 1 -->
+            <i v-if="indice==0" class="fas fa-circle"></i>
+
+            <i v-else class="far fa-circle"></i>
+            <!-- circle 2 -->
+            <i v-if="indice==1" class="fas fa-circle"></i>
+            <i v-else class="far fa-circle"></i>
+
+            <!-- circle 3 -->
+            <i v-if="indice==2" class="fas fa-circle"></i>
+            <i v-else class="far fa-circle"></i>
+
+            <!-- circle 4 -->
+            <i v-if="indice==3" class="fas fa-circle"></i>
+            <i v-else class="far fa-circle"></i>
+
+            <!-- circle 5 -->
+            <i v-if="indice==4" class="fas fa-circle"></i>
+            <i v-else class="far fa-circle"></i>
+
+        </div>
     </div>
     <!-- VUE CDN -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>

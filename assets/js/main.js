@@ -16,6 +16,8 @@ const app = new Vue(
         },
 
         methods: {
+            /* funzione poer tornare all'immagine successiva */
+
             next: function next() {
                 if (this.indice < this.img.length - 1) {
                     return this.indice += 1;
@@ -23,7 +25,7 @@ const app = new Vue(
                     return this.indice = 0
                 }
             },
-
+            /* funzione poer tornare all'immagine precedente */
             previous: function prevgious() {
                 if (this.indice != 0) {
                     return this.indice -= 1;

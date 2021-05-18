@@ -19,6 +19,14 @@ img{
     margin: 30px ;
     border-radius: 0.5rem;
 }
-i{
+.carosello>i{
     font-size: 3.5rem ;
+}
+
+.points{
+    text-align: center;
+}
+.points > i{
+    font-size: 1.2rem;
+    margin-right: 0.8rem;
 }
