@@ -25,23 +25,22 @@
         <div class="points">
             <!-- circle 1 -->
             <i v-if="indice==0" class="fas fa-circle"></i>
-
-            <i v-else class="far fa-circle"></i>
+            <i @click="selected" v-else class="far fa-circle" data-number="0"></i>
             <!-- circle 2 -->
             <i v-if="indice==1" class="fas fa-circle"></i>
-            <i v-else class="far fa-circle"></i>
+            <i @click="selected" v-else class="far fa-circle" data-number="1"></i>
 
             <!-- circle 3 -->
             <i v-if="indice==2" class="fas fa-circle"></i>
-            <i v-else class="far fa-circle"></i>
+            <i @click="selected" v-else class="far fa-circle" data-number="2"></i>
 
             <!-- circle 4 -->
             <i v-if="indice==3" class="fas fa-circle"></i>
-            <i v-else class="far fa-circle"></i>
+            <i @click="selected" v-else class="far fa-circle" data-number="3"></i>
 
             <!-- circle 5 -->
             <i v-if="indice==4" class="fas fa-circle"></i>
-            <i v-else class="far fa-circle"></i>
+            <i @click="selected" v-else class="far fa-circle" data-number="4"></i>
 
         </div>
     </div>

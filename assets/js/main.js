@@ -32,6 +32,10 @@ const app = new Vue(
                 } else {
                     return this.indice = this.img.length - 1
                 }
+            },
+
+            selected: function selected(e) {
+                return this.indice = (e.currentTarget.getAttribute('data-number'));
             }
         }
     }
